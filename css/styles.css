@@ -1,0 +1,45 @@
+body {
+    background-color: #fafdfd;
+}
+
+h1 /* Figma text style: NEWS, Arial bold 36  */ {
+        font-family: Arial;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+}
+
+h2 /* Figma text style: image text, Georgia bold italic30   */ {
+    font-family: Georgia;
+    font-size: 1.875rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal; 
+}
+
+h3 /* Figma text style: HEADLINE, Arial bold 18  */ {
+    font-family: Arial;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+}
+
+.header {
+    width: 1440px;
+    height: 160px;
+    flex-shrink: 0; 
+
+    border: 2px solid var(--Logo-farge, #053641);
+    background: var(--Bakgrunn, #FAFDFD); 
+}
+
+.logo {
+    display: flex;
+    width: 284px;
+    height: 160px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; 
+}
