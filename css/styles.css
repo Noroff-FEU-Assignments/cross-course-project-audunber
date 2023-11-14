@@ -1,13 +1,20 @@
 body {
     background-color: #fafdfd;
+   overflow: hidden;
+   margin: 0px;
+   height: 100vh;
 }
 
 h1 /* Figma text style: NEWS, Arial bold 36  */ {
         font-family: Arial;
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal; 
+    color:#053641;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
 }
 
 h2 /* Figma text style: image text, Georgia bold italic30   */ {
@@ -16,6 +23,9 @@ h2 /* Figma text style: image text, Georgia bold italic30   */ {
     font-style: italic;
     font-weight: 700;
     line-height: normal; 
+    color:#053641;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 h3 /* Figma text style: HEADLINE, Arial bold 18  */ {
@@ -24,22 +34,324 @@ h3 /* Figma text style: HEADLINE, Arial bold 18  */ {
     font-style: normal;
     font-weight: 700;
     line-height: normal; 
+    color:#053641;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-.header {
-    width: 1440px;
-    height: 160px;
+h4, .headernav li a /* Figma text style BUTTONS, arial bold 14  */ {
+    font-family: Arial;
+    font-size: 0.875rem;
+    font-style: bold;
+    font-weight: 700;
+    line-height: normal; 
+    color:#053641;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+p /* Figma text style TEXT, Georgia, regular 14*/{
+    font-family: Georgia;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+    color:#053641;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .strek {
+    grid-area: logo;
+    grid-column: 1 / span 4;
+    border-top: 2px solid var(--Logo-farge, #053641);
+    border-bottom: 2px solid var(--Logo-farge, #053641);
+}
+
+
+.strek2 {
+    grid-area: search;
+    grid-column: 1 / span 4;
+    
+    border-bottom: 2px solid var(--Logo-farge, #053641);
+} */
+
+
+header {
+    border-top: 2px solid #053641;
+    border-bottom: 2px solid #053641;    
+    grid-template-columns: 143 143 143;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "logo logo button";
+    max-width: 1440px;
     flex-shrink: 0; 
-
-    border: 2px solid var(--Logo-farge, #053641);
     background: var(--Bakgrunn, #FAFDFD); 
-}
+        
+  }
 
 .logo {
     display: flex;
-    width: 284px;
-    height: 160px;
+    max-width: 284px;
+    max-height: 160px;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0; 
+    flex-shrink: 1; 
+    z-index: 1000;
 }
+
+
+
+
+
+#hamburger {
+    display: flex;
+    position:absolute;
+    right: 6%;
+    top: 54px;
+    max-width: 59px;
+    max-height: 59px;
+    flex-shrink: 1; 
+
+}
+
+ul {margin: 0px;}
+
+nav,
+#menu-checkbox {
+    display: none;
+  }
+
+
+
+#menu-checkbox:checked ~ nav {
+    display: inline-block;
+
+    
+    
+    background: var(--Bakgrunn, #FAFDFD); 
+    
+}
+
+
+.searchbox {
+    /* position: absolute; */
+    /* top: 188px; */
+    /* left: 37.5px; */
+    min-width: 50%;
+    min-height: 37px; 
+
+    margin-left: 10%;
+    margin-top: 24px;
+    flex-shrink: 0; 
+    border-radius: 5px;
+    border: 1px solid var(--Logo-farge, #053641);
+    background: #FFF; 
+    background-image: url(../images/Search-icon.svg);
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 6px;
+}
+
+.profile-icon {
+    max-width: 24px;
+    max-height: 24px;
+    flex-shrink: 0;    
+    position: absolute;
+    right: 15%;
+    top: 194px;
+  
+     
+}
+
+.cart-icon {
+    max-width: 24px;
+    max-height: 24px;
+    flex-shrink: 0; 
+    margin-left: 5%;
+    position: absolute;
+    right: 6%;
+    top: 194px;
+}
+/* 
+.headernav {
+width: 100%;
+} */
+
+.headernav {
+    border-top: 2px solid #053641;    
+    width: 100%;
+    margin: auto;
+}
+
+.headernav li {
+    margin-top: 24px;
+    /* margin-left: 37px; */
+    margin-bottom: 17px; 
+    display: inline-block;
+    padding: 1px 2px 1px 2px;
+    margin-left: 4%;
+    margin-right: 4%;
+    
+}
+
+#topnav-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+
+
+/* her ligger forsøk/forslag på banner+knapp med skalerende tekst osv */
+/* #homepagetext1,
+#homepagetext2 {
+    color: #FAFDFD;
+    stroke:#053641;
+    stroke-width: 0.5px;
+    }
+#homepagetext1 {
+    padding-top: 5px;
+    width: 40%;
+}
+#homepagetext2 {
+    font-style:italic;
+} */
+
+
+
+#homepage-banner {
+        background: url(../images/homepage_bannerEDIT.jpg) no-repeat;
+        width: 100%;
+        height: 193px;
+        background-size: cover;
+
+        
+}
+ 
+
+
+.button1 {
+    font-style: bold;
+    color:#FAFDFD;
+    background: #F23E2E; 
+    display: inline-flex;
+    height: 23px;
+    padding: 4.84px 12.1px;
+    justify-content: center;
+    align-items: center;
+    gap: 12.1px;
+    flex-shrink: 0; 
+    border: 0.242px solid #053641;
+    position: relative;
+    top: 75%;
+    left: 8%;
+    border-radius: 14.906px; 
+
+    
+}
+
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.content h1 {
+    margin-top: 5%;
+    text-align: center;
+    grid-column: span 2;
+}
+
+
+.product {
+    max-width: 95%;
+    margin-left: 1%;
+    margin-top: 5%;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid rgba(173, 173, 173, 0.60);
+    border-radius: 3px;
+    
+}
+.product img {
+    align-items: right;
+    max-height: 200px;
+    max-width: 200px;    
+    
+}
+.product h4 {
+    border-top:1px solid rgba(173, 173, 173, 0.60);
+}
+
+
+
+.homepageads img {
+    max-width: 100%;
+}
+.homepageads {
+    
+    grid-column: span 2;
+}
+
+@media only screen and (min-width: 600px) {
+    h1 /* Figma text style: NEWS, Arial bold 36  */ {
+        font-family: Arial;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+    color:#053641;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+    
+
+        
+    }
+}
+
+
