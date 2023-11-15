@@ -1,3 +1,8 @@
+html {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
 body {
     background-color: #fafdfd;
    overflow: hidden;
@@ -56,7 +61,7 @@ p /* Figma text style TEXT, Georgia, regular 14*/{
     font-family: Georgia;
     font-size: 0.875rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: normal; 
     color:#053641;
     margin-top: 0px;
@@ -315,18 +320,28 @@ width: 100%;
     border-radius: 3px;
     border: 1px solid rgba(173, 173, 173, 0.60);
     border-radius: 3px;
-    
+    position: relative;
+    margin-bottom: 5px;
 }
 .product img {
     align-items: right;
     max-height: 200px;
-    max-width: 200px;    
+    max-width: 100%;
     
 }
 .product h4 {
+    padding-top: 2%;
+    margin-bottom: 2%;
     border-top:1px solid rgba(173, 173, 173, 0.60);
 }
-
+.product h3 {
+position:absolute;
+left: 75%;
+bottom: 1%;
+}
+.product p {
+margin-bottom: 2%;
+}
 
 
 .homepageads img {
