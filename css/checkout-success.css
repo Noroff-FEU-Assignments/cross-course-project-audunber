@@ -1,0 +1,65 @@
+#successmark {
+    margin-top: 10%;
+    grid-row: 1 / span 2;
+/* grid-column: 2 / span 1;} */
+    justify-self: end;
+}
+
+
+#successone {
+    justify-self: center;
+    text-justify: center;
+    text-align: center;
+    grid-row: 1;
+    grid-column: 2 / span 3;}
+#successtwo {
+    justify-self: center;
+    text-justify: center;
+    text-align: center;
+    grid-row: 2;
+    grid-column: 2 / span 3;
+
+    border-radius: 5px;
+    border-bottom: 2px solid #ADADAD;
+margin-bottom: 15px;}
+
+.content h3 {grid-column: 2;
+    grid-row: 3;}
+
+    #contactus {grid-column: 3 / span 2;
+    grid-row: 3;}
+
+.cartsummary {grid-row: 4;}
+.belowcart {grid-row: 4;}
+.belowbelowcart {grid-row: 5;}
+#thanksforshopping {grid-row: 5;
+grid-column: 3 / span 1;}
+#visaicon {grid-column: 4;
+grid-row: 4;
+}
+
+#continue {
+    margin: 5%;
+    grid-row: 5;
+    grid-column: 1 / span 4;
+max-width: 50%;
+justify-self: center;}
+
+
+
+
+    @media only screen and (min-width: 600px) {
+        #successtwo {
+            grid-column: 2 / span 2;}
+    
+            #successone {
+                
+                grid-column: 2 / span 2;}
+
+                #contactus {grid-column: 3 / span 1};
+    
+    
+      
+    
+    
+        }
