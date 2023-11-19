@@ -1,0 +1,211 @@
+h1 {
+    grid-row: 1;
+    grid-column: 1 / span 4;
+    font-family: Georgia;
+    font-size: 1.875rem;
+    font-style: italic;
+    justify-self: center;
+}
+h2 {
+    font-family: Arial;
+    font-size: 1.5rem;
+    font-style: normal;
+}
+label {color: #053641;
+
+    /* HEADLINE */
+    font-family: Arial;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+input {
+    box-sizing: border-box;
+    min-width: 0; /* new */
+}
+
+
+.cartsummary h4 {font-size: 0.625rem;}
+.cartsummary p {font-size: 0.625rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#cartheadline {grid-column: 1 / span 2;
+    grid-row: 2;
+    margin-top: 5%;}
+
+
+
+.cartsummary {
+    margin: 1%;
+    border-radius: 5px;
+    border: 1px solid rgba(173, 173, 173, 0.60);
+    grid-column: 1 / span 4;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    justify-items: left;
+    align-items: center;
+}
+
+
+.cartsummary img {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+}
+
+.topcart {grid-row: 1;
+
+}
+.midcart {grid-row: 2;}
+.bottomcart {grid-row: 3;
+    }
+
+.twocart {grid-column: 2;}
+.threecart {grid-column: 3;
+}
+.fourcart {grid-column: 4;}
+
+#qtybox {
+    
+    border: 0.76px solid #053641;
+    width: 14.435px;
+    height: 12.155px;
+    padding: 5px;
+    align-self: center;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#shippingheadline {
+    grid-column: 2 / span 2;  
+    margin-left: 5%;
+}
+
+
+
+
+.form {
+    
+    grid-column: 2 / span 2;
+    padding: 5%;
+    max-width: fit-content;
+}
+
+
+#paymentdetailsheadline {
+    grid-column: 2 / span 4;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+#completeorder {
+    grid-column: 2 / span 2;
+    justify-self: center;
+    margin: 5px;
+}
+#purchasebutton { grid-column: 2 / span 2;
+    justify-self: center;
+    margin: 5px;
+}
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+
+    .cartsummary h4 {font-size: 0.875rem;}
+    .cartsummary p {font-size: 0.875rem;}
+
+    #shippingheadline {
+        grid-column: 2 / span 1;  
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    
+    
+    
+    
+    .form {
+        grid-row: 5 / span 2;
+        grid-column: 2 / span 1;
+        padding: 5%;
+        max-width: fit-content;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        
+    }
+    
+    
+    #paymentdetailsheadline {
+        grid-column: 3 / span 1;
+        grid-row: 4;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+
+    .cardform {
+        grid-row: 5 / span 1;
+        grid-column: 3 / span 4;
+        margin-bottom: 0px;
+        justify-self: left;
+        align-self: left;
+    }
+    
+    #completeorder {
+        grid-row:6;
+        grid-column: 3 / span 1;
+        justify-self: center;
+        align-self: start;
+        margin: 10px;
+    }
+    #purchasebutton { 
+        grid-row: 6;
+        grid-column: 3 / span 1;
+        justify-self: center;
+        align-self: end;
+        margin: 20px;
+    }
+    
+ 
+
+
+
+}
